@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscrição - Tech Experience 2027</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Inscrição</h1>
+        <p>Preencha os dados abaixo para se inscrever no Tech Experience 2027.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="programacao.html">Programação</a>
+        <a href="palestrantes.html">Palestrantes</a>
+        <a href="local.html">Local</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="inscricoes.html">Inscrição</a>
+    </nav>
+
+
+    <main>
+
+        <!-- ORIENTAÇÕES -->
+        <section>
+            <h2>Orientações para Inscrição</h2>
+
+            <button commandfor="meu-modal" command="show-modal">
+                CLIQUE
+            </button>
+
+            <dialog id="meu-modal" open>
+                <h2>Bem-vindo à Tech Experience 2027!</h2>
+
+                <p>
+                    Seja bem-vindo ao nosso evento!
+                </p>
+
+                <button commandfor="meu-modal" command="close">
+                    Fechar
+                </button>
+            </dialog>
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+        <form>
+
+            <!-- DADOS PESSOAIS -->
+            <section>
+                <h2>Dados Pessoais</h2>
+
+                <label for="nome">
+                    Nome Completo *
+                </label>
+
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+
+                <label for="email">
+                    E-mail *
+                </label>
+
+                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+
+
+                <div>
+                    <label for="telefone">
+                        Telefone *
+                    </label>
+
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+
+                    <small>Formato: (11) 99999-9999</small>
+                </div>
+
+
+                <div>
+                    <label for="cpf">
+                        CPF *
+                    </label>
+
+                    <input type="text" id="cpf" name="cpf" placeholder="123.456.789-00" required>
+
+                    <small>Formato: 123.456.789-00</small>
+                </div>
+
+
+                <div>
+                    <label for="cep">
+                        CEP *
+                    </label>
+
+                    <input type="text" id="cep" name="cep" placeholder="01234-567" required>
+                </div>
+
+
+                <div>
+                    <label for="nascimento">
+                        Data de Nascimento
+                    </label>
+
+                    <input type="date" id="nascimento" name="nascimento">
+                </div>
+
+
+                <label for="instituicao">
+                    Instituição de Ensino
+                </label>
+
+                <input type="text" id="instituicao" name="instituicao" placeholder="Digite ou escolha uma instituição"
+                    list="instituicoes">
+
+                <datalist id="instituicoes">
+                    <option value="SENAC">
+                    <option value="USP">
+                    <option value="UNIP">
+                    <option value="Cruzeiro do Sul">
+                    <option value="Anhembi Morumbi">
+                </datalist>
+
+            </section>
+
+
+            <!-- INFORMAÇÕES ACADÊMICAS -->
+            <section>
+                <h2>Informações Acadêmicas</h2>
+
+                <label for="curso">
+                    Curso *
+                </label>
+
+                <select id="curso" name="curso" required>
+                    <option value="">
+                        Selecione seu curso...
+                    </option>
+
+                    <option value="ti">
+                        Tecnologia da Informação
+                    </option>
+
+                    <option value="informatica">
+                        Informática
+                    </option>
+
+                    <option value="desenvolvimento">
+                        Desenvolvimento de Sistemas
+                    </option>
+
+                    <option value="redes">
+                        Redes de Computadores
+                    </option>
+
+                    <option value="ciencia-computacao">
+                        Ciência da Computação
+                    </option>
+                </select>
+
+
+                <fieldset>
+                    <legend>Período *</legend>
+
+                    <label>
+                        <input type="radio" name="periodo" value="manha" required>
+                        Manhã
+                    </label>
+
+                    <label>
+                        <input type="radio" name="periodo" value="noite">
+                        Noite
+                    </label>
+                </fieldset>
+
+
+                <label for="horario">
+                    Horário Previsto de Chegada
+                </label>
+
+                <input type="time" id="horario" name="horario" value="19:00">
+
+            </section>
+
+
+            <!-- ÁREAS DE INTERESSE -->
+            <section>
+                <h2>Áreas de Interesse</h2>
+
+                <p>
+                    <strong>
+                        Selecione os temas desejados:
+                    </strong>
+                </p>
+
+                <label>
+                    <input type="checkbox" name="interesse" value="desenvolvimento-web">
+                    Desenvolvimento Web
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesse" value="inteligencia-artificial">
+                    Inteligência Artificial
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesse" value="computacao-nuvem">
+                    Computação em Nuvem
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesse" value="seguranca">
+                    Segurança da Informação
+                </label>
+
+
+                <label for="atividade">
+                    Atividade de Maior Interesse
+                </label>
+
+                <select id="atividade" name="atividade">
+                    <option value="ia">
+                        IA no desenvolvimento de software
+                    </option>
+
+                    <option value="navegador">
+                        O navegador por trás da página
+                    </option>
+
+                    <option value="computacao-nuvem">
+                        Primeiros passos em computação em nuvem
+                    </option>
+
+                    <option value="seguranca-web">
+                        Segurança para quem desenvolve Web
+                    </option>
+
+                    <option value="acessibilidade">
+                        Acessibilidade e Semântica Web
+                    </option>
+
+                    <option value="svg">
+                        Manipulação de SVGs Dinâmicos
+                    </option>
+
+                    <option value="webassembly">
+                        WebAssembly: C/C++ no Navegador
+                    </option>
+                </select>
+
+            </section>
+
+
+            <!-- OUTRAS INFORMAÇÕES -->
+            <section>
+                <h2>Outras Informações</h2>
+
+                <label for="expectativa">
+                    O que você espera aprender no evento?
+                </label>
+
+                <textarea id="expectativa" name="expectativa" rows="5"
+                    placeholder="Escreva uma breve mensagem..."></textarea>
+
+
+                <label for="comprovante">
+                    Comprovante Acadêmico (opcional)
+                </label>
+
+                <input type="file" id="comprovante" name="comprovante">
+
+
+                <label>
+                    <input type="checkbox" name="confirmacao" required>
+                    Confirmo que os dados informados são corretos.
+                </label>
+
+            </section>
+
+
+            <!-- BOTÕES -->
+            <div>
+                <button type="submit">
+                    Realizar Inscrição
+                </button>
+
+                <button type="reset">
+                    Limpar Formulário
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Tech Experience 2027 •
+            <a href="index.html">
+                Voltar para a página inicial
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
